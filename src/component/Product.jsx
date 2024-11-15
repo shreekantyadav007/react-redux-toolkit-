@@ -3,7 +3,7 @@ import React from 'react'
 export const Product = ({name, imageUrl, price, handleClick}) => {
   return (
     <>
-        <div className="card">
+        <div className="card" key={name}>
             <img src={imageUrl} alt="" />
             <h2>{name}</h2>
             <h2>Price: {price}</h2>
